@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="calculator">
+    <div class="calc-window">
+        <p class="window__result">0</p>
+    </div>
+    <div class="calculator-buttons">
+        <div class="button-line">
+            <button class="calculator-buttons__operators-top" onclick="clearWindow()"> AC</button>
+            <button class="calculator-buttons__operators-top" onclick="changeSign()"> ±</button>
+            <button class="calculator-buttons__operators-top" onclick="clickNumber('%')"> %</button>
+            <button class="calculator-buttons__operators" onclick="clickNumber('/')"> ÷</button>
+        </div>
+        <div class="button-line">
+            <button class="calculator-buttons__number" onclick="clickNumber(7)"> 7</button>
+            <button class="calculator-buttons__number" onclick="clickNumber(8)"> 8</button>
+            <button class="calculator-buttons__number" onclick="clickNumber(9)"> 9</button>
+            <button class="calculator-buttons__operators" onclick="clickNumber('*')"> ×</button>
+        </div>
+        <div class="button-line">
+            <button class="calculator-buttons__number" onclick="clickNumber(4)"> 4</button>
+            <button class="calculator-buttons__number" onclick="clickNumber(5)"> 5</button>
+            <button class="calculator-buttons__number" onclick="clickNumber(6)"> 6</button>
+            <button class="calculator-buttons__operators" onclick="clickNumber('-')"> −</button>
+        </div>
+        <div class="button-line">
+            <button class="calculator-buttons__number" onclick="clickNumber(1)"> 1</button>
+            <button class="calculator-buttons__number" onclick="clickNumber(2)"> 2</button>
+            <button class="calculator-buttons__number" onclick="clickNumber(3)"> 3</button>
+            <button class="calculator-buttons__operators" onclick="clickNumber('+')"> +</button>
+        </div>
+        <div class="button-line">
+            <button class="calculator-buttons__button-null" onclick="clickNumber(0)"> 0</button>
+            <button class="calculator-buttons__comma" onclick="clickNumber(',')"> ,</button>
+            <button class="calculator-buttons__operators" onclick="getResult()"> =</button>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
